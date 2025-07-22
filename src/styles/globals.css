@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+/* ─── Paletas base ───────────────────────────────────────── */
+/* ─── Tema A · degradado original ───────────────────────── */
+/* Tema A – principal */
+:root,
+[data-theme="temaA"] {
+  --bg:         #111827;   /* slate‑900  */
+  --text:       #f1f5f9;   /* slate‑100  */
+  --accent:     #a35e98;   /* menta‑neón */
+  --grad-start: #1f2937;   /* slate‑800  */
+  --grad-end:   #121a2c;   /* slate‑950  */
+}
+
+/* Tema B – logo */
+[data-theme="temaB"] {
+
+    --bg:         #d8cadb;
+  --text:       #ffffff;
+  --accent:     #52acbe;
+  --grad-start: #af6db8; /* fuchsia‑600  */
+  --grad-end:   #5b21b6; /* violet‑700   */
+}
+
+
+/* Tema C – coral claro*/
+[data-theme="temaC"] {
+  --bg:         #88aeca;   /* azul hielo */
+  --text:       #ffffff;   /* navy‑teal  */
+  --accent:     #5e37b1;   /* teal vivo  */
+  --grad-start: #52acbe;   /* teal‑200   */
+  --grad-end:   #118ab2;   /* teal‑600   */
+}
+
+/* Tema D – menta‑lavanda */
+[data-theme="temaD"] {
+  --bg:         #7a6f96;   /* menta‑50   */
+  --text:       #ffffff;   /* gris‑ancla */
+  --accent:     #272424;   /* lavanda    */
+  --grad-start: #272424;   /* menta‑200  */
+  --grad-end:   #ae89ff;   /* lavanda‑400*/
+  
+}
+
+/* Transición suave */
+* { transition: background-color .3s, color .3s, background-image .3s; }
